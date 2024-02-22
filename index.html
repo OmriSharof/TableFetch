@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table Before and After Discount</title>
+    <style>
+        h1 {
+            font-size: 2rem;
+            font-style: italic;
+            color: #0e5d81;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .table-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid #000000;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            border: 3px solid #000000;
+            padding: 12px;
+            text-align: left;
+            font-style: italic;
+        }
+
+        th {
+            background-color: #a0a0a0;
+            color: #0e5d81;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #599dbd;
+        }
+
+        .pagination {
+            margin-top: 1rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .pagination button {
+            margin-right: 0.5rem;
+            padding: 8px 16px;
+            background-color: #0e5d81;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+            border: 5px;
+            border-radius: 5px;
+        }
+
+        .pagination button:hover {
+            background-color: #599dbd;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="table-container">
+    <h1>Product Table Before and After Discount</h1>
+    <div id="productTable"></div>
+    <div class="pagination">
+        <button id="prevPage">Previous</button>
+        <button id="nextPage">Next</button>
+    </div>
+</div>
+<script src="indexscript.js"></script>
+</body>
+</html>
